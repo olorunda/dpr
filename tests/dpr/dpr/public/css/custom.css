@@ -1,0 +1,83 @@
+/* your styles go here */
+.icon img {
+	position: relative;
+	left: -5px;
+	top: -2px;
+}
+
+.space {
+	height: 100px;
+}
+
+.dropzone, #my-dropzone {
+	font-family: "Segoe UI";
+	border: 2px dashed grey;
+	font-size: 18px;
+	color: black;
+	background-image: url('../img/icons/picture.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#logo {
+	margin-top: -15px;
+}
+
+#web {
+	display: none;
+}
+
+#my-dropzone-files {
+	font-family: "Segoe UI";
+	border: 2px dashed grey;
+	font-size: 18px;
+	color: black;
+	background-image: url('../img/icons/pdf1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#user_prof {
+	width: 100px;
+	height: 100px;
+}
+
+/*
+################################################
+//----------Added by zeus 25/08/2016------------
+################################################*/
+
+.clear-fix {
+	overflow: auto;
+}
+.dpr-well {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	/*box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	-moz-box-shadow:2px 2px 2px #888888;
+	-o-box-shadow:2px 2px 2px #888888;*/
+}
+
+.data {
+	position: relative;;
+	left: 1%;
+	top: -1.2em;
+}
+
+.space-min {
+	50px;
+}
+#dpr-pf-name {
+	font-size: 16px;
+}
+#pr-name {
+	position: relative;
+	top: -15%;
+}
+
+#pr-name {
+	position: relative;
+	top: -15%;
+}

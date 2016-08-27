@@ -1,0 +1,61 @@
+<!--<div class="col-md-10">
+                <div class="form-group">
+                    <br>
+                    <label for="f_name">First name</label>
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-11">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-bookmark bigger-110"></i>
+                                </span>
+                                <input type="text" class="form-control" name="f_name" id="f_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="l_name">Last name</label>
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-11">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-bookmark bigger-110"></i>
+                                </span>
+                                <input type="text" class="form-control" name="l_name" id="l_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="m_name">Middle name</label>
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-11">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-bookmark bigger-110"></i>
+                                </span>
+                                <input type="text" class="form-control" name="m_name" id="m_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="l_name">Maiden name</label>
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-11">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-bookmark bigger-110"></i>
+                                </span>
+                                <input type="text" class="form-control" name="maiden_name" id="maiden_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->

@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'azure-cli',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of C:\Users\laol\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\laol\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'azure-cli', null ]
+7 verbose cache add spec azure-cli
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'azure-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'azure-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed azure-cli@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for azure-cli
+11 info addNameTag [ 'azure-cli', 'latest' ]
+12 silly mapToRegistry name azure-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry http://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'azure-cli',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'azure-cli',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri http://registry.npmjs.org/azure-cli
+17 verbose addNameTag registry:http://registry.npmjs.org/azure-cli not in flight; fetching
+18 verbose request uri http://registry.npmjs.org/azure-cli
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 9:25:22 PM
+21 verbose request id 7cbba59889125d90
+22 http request GET http://registry.npmjs.org/azure-cli
+23 http 200 http://registry.npmjs.org/azure-cli
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   etag: '"CMUY9ZCX5XVU92QK8XUI7VTVC"',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'content-encoding': 'gzip',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Tue, 23 Aug 2016 20:25:25 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'x-served-by': 'cache-ams4138-AMS',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1471983924.460143,VS0,VE764',
+24 verbose headers   vary: 'Accept-Encoding',
+24 verbose headers   'transfer-encoding': 'chunked' }
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"CMUY9ZCX5XVU92QK8XUI7VTVC"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'content-encoding': 'gzip',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Tue, 23 Aug 2016 20:25:25 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'x-served-by': 'cache-ams4138-AMS',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1471983924.460143,VS0,VE764',
+25 silly get     vary: 'Accept-Encoding',
+25 silly get     'transfer-encoding': 'chunked' } ]
+26 verbose get saving azure-cli to C:\Users\laol\AppData\Roaming\npm-cache\registry.npmjs.org\azure-cli\.cache.json
+27 verbose correctMkdir C:\Users\laol\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+28 silly addNameTag next cb for azure-cli with tag latest
+29 silly addNamed azure-cli@0.10.3
+30 verbose addNamed "0.10.3" is a plain semver version for azure-cli
+31 silly mapToRegistry name azure-cli
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry http://registry.npmjs.org/
+34 silly mapToRegistry data Result {
+34 silly mapToRegistry   raw: 'azure-cli',
+34 silly mapToRegistry   scope: null,
+34 silly mapToRegistry   name: 'azure-cli',
+34 silly mapToRegistry   rawSpec: '',
+34 silly mapToRegistry   spec: 'latest',
+34 silly mapToRegistry   type: 'tag' }
+35 silly mapToRegistry uri http://registry.npmjs.org/azure-cli
+36 verbose addRemoteTarball http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz',
+37 verbose addRemoteTarball   'be426d6bd3b940e0e82e85e13381fd3f6372e8a6' ]
+38 info retry fetch attempt 1 at 9:25:31 PM
+39 info attempt registry request try #1 at 9:25:31 PM
+40 http fetch GET http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz
+41 http fetch 503 http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz
+42 info retry will retry, error on last attempt: Error: server error 503
+43 info attempt registry request try #2 at 9:25:44 PM
+44 http fetch GET http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz
+45 http fetch 200 http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz
+46 silly fetchAndShaCheck shasum be426d6bd3b940e0e82e85e13381fd3f6372e8a6
+47 verbose stack Error: shasum check failed for C:\Users\laol\AppData\Local\Temp\npm-5884-8e7fb9e2\registry.npmjs.org\azure-cli\-\azure-cli-0.10.3.tgz
+47 verbose stack Expected: be426d6bd3b940e0e82e85e13381fd3f6372e8a6
+47 verbose stack Actual:   cd5f0dc4daeaaf114992ebc6758464d65a9f2ee9
+47 verbose stack From:     http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz
+47 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:25:8
+47 verbose stack     at ReadStream.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:72:7)
+47 verbose stack     at emitNone (events.js:72:20)
+47 verbose stack     at ReadStream.emit (events.js:166:7)
+47 verbose stack     at endReadableNT (_stream_readable.js:921:12)
+47 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+47 verbose stack     at process._tickCallback (node.js:356:17)
+48 verbose cwd c:\wamp64\www\dpr
+49 error Windows_NT 10.0.10240
+50 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "azure-cli" "-g"
+51 error node v4.4.7
+52 error npm  v2.15.8
+53 error shasum check failed for C:\Users\laol\AppData\Local\Temp\npm-5884-8e7fb9e2\registry.npmjs.org\azure-cli\-\azure-cli-0.10.3.tgz
+53 error Expected: be426d6bd3b940e0e82e85e13381fd3f6372e8a6
+53 error Actual:   cd5f0dc4daeaaf114992ebc6758464d65a9f2ee9
+53 error From:     http://registry.npmjs.org/azure-cli/-/azure-cli-0.10.3.tgz
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]

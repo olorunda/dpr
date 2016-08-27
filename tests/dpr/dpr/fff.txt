@@ -1,0 +1,437 @@
+  Dropzone.autoDiscover = false;
+                var myDropzone = new Dropzone("#my-dropzone",{
+                
+                url:'../logic/addimage.php',
+                autoProcessQueue:false,
+                acceptedFiles:'image/*',
+                uploadMultiple:false,
+                dictDefaultMessage:"Drop only image file here",
+                maxFiles:1,
+                addRemoveLinks:'dictCancelUpload',
+                parallelUploads:1,
+                dictInvalidFileType:"Only image  files allowed",
+                maxFilesize:5
+                
+                });
+                
+                //sending event
+                myDropzone.on("sending", function(file,xhr,formData) {
+			
+                formData.append("album",$("#album").val()); 
+                formData.append("img-title",$("#img-title").val()); 
+                formData.append("img-description",$("#img-description").val()); 
+		formData_token
+                
+                });
+                
+                //success upload
+                myDropzone.on("success", function(file,response) {
+
+                sessionStorage.setItem("message",response); 
+                
+                });
+                
+                //upload complete
+                myDropzone.on("complete", function(file) {
+                $("#btn").text("Add Image");
+                myDropzone.removeFile(file);
+                });
+                
+                //quer complete
+                myDropzone.on("queuecomplete", function(file) {
+                if(sessionStorage.getItem("error")=="1"){
+                return ;
+                }
+                alert (sessionStorage.getItem("message"));
+                });
+                sessionStorage.setItem("error","0");
+                
+                //error 
+                myDropzone.on("error", function(file) {
+                sessionStorage.setItem("error","1");
+                alert ("Only One Image allowed");
+                });
+                
+                //process upload
+                $("#btn").click(function(){
+                if($("#album").val()=="" || $("#img-title").val()=="",$("#img-description").val()==""){
+                return  alert("blank field");
+                }
+                myDropzone.processQueue();
+                });
+                
+
+
+acceptedFiles:'.pdf,.doc,.docx',
+
+
+
+
+'file' => 'required|mimes:docx,doc,pdf',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-10">
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                        <label for="qualification">Highest Qualification</label>
+                                        <select  class="form-control" id="qualification" name="qualification">
+                                            <option>-Select-</option>
+                                            <option value="pgd">Post Graduate PGD</option>
+                                            <option value="bsc">B.Sc.</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$apply_cand = User::where('id',$request->id)
+				->update([
+					'm_name'=>$request->middle_name,
+					'phone_num' => $request->phone_number, 
+					'dob' => $request->date_of_birth, 
+					'sex' => $request->sex, 
+					'image'=>$filename,
+					'age' => $age,
+					'marital_status' => $request->marital_status
+				]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+try{
+			$idate = $request->idate;
+			$sdate = $request->sdate;
+			$pdate = $request->pdate;
+
+			$istart_date = str_ireplace('/', '-', substr($idate, 0, 10));
+			$iend_date = str_ireplace('/', '-', )substr($idate, 12, 21);
+
+			$sstart_date = str_ireplace('/', '-', substr($sdate, 0, 10));
+			$send_date = str_ireplace('/', '-', substr($sdate, 12, 21));
+
+			$pstart_date = str_ireplace('/', '-', substr($pdate, 0, 10));
+			$pend_date = str_ireplace('/', '-', substr($pdate, 12, 21));
+		
+			//loop throug and upload
+			$index = 0;
+			foreach($request->file('file') as $files){
+				$filename = $request->User()->f_name . time().'.'.$files->getClientOriginalExtension();
+				$files->move('upload/profiles', $filename);
+				$filenames[$index] = $filename;
+				$index+=1;
+				//return $filename1;
+			}
+
+					if($filenames[1]=="" || $filenames[2]=="") {
+						return "Incomplete Files! Make Sure You Upload All Three Files";
+					}
+					
+					
+					//database save info
+						$saveducation = institution::create([
+							'user_ref' => $request->user_ref,
+							'iname' => $request->iname, 
+							'sname' => $request->sname, 
+							'pname' => $request->pname,
+							'istart_date' => $istart_date, 
+							'iend_date' => $iend_date, 
+							'sstart_date' => $sstart_date, 
+							'send_date' => $send_date, 
+							'pstart_date' => $pstart_date, 
+							'pend_date' => $pend_date,
+							'grade' => $request->grade, 
+							'degree' => $request->degree, 
+							'ifile' => $filenames[0], 
+							'sfile' => $filenames[1], 
+							'pfile' => $filenames[2]
+						]);	
+					return "success";
+		
+		}
+		catch (\Exception $ex ){
+			return $ex;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//$request->file('file')->move('upload/profiles', $filename);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var max_fields      = 10; //maximum input boxes allowed
+        var wrapper         = $(".text-box"); //Fields wrapper
+        var add_button      = $("#add_field_button"); //Add button ID
+        
+        var x = 1; //initlal text box count
+        $(add_button).click(function(e){ //on add input button click
+            e.preventDefault();
+            if(x < max_fields){ //max input box allowed
+                x++; //text box increment
+                $(wrapper).append(
+                    '<div id="'+x+'"><div class="col-md-10"><div class="form-group"><label for="iname">Name of Professional body</label><div class="row"><div class="col-xs-8 col-sm-11"><div class="input-group"><span class="input-group-addon"><i class="fa fa-bookmark bigger-110"></i></span><input type="text" class="form-control" name="body[]" id="body[]"></div></div></div></div></div><div class="col-md-10"><div class="form-group"><label for="idate">Position</label><div class="row"><div class="col-xs-8 col-sm-11"><div class="input-group"><span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span><input class="form-control" type="text" name="pos[]" id="pos[]"></div></div></div></div></div></div>');
+                     //add input box
+            }
+        });
+        
+        $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+            e.preventDefault(); 
+            $(this).parent('div').remove(); x--;
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+redirect to login page after registration
+Thank you for registering on the dpr site
+
+sex, application date, test-scores, show total number of users in a particular search criteria, pagination, 
+barcode and reference number, date and time
+which barcode scanner are we using
+
+during registering, there should be column for others, 
+create another role to enter applicants data locally by HR
+
+link with office 365
+
+drop down for higher institution
+others column for other degrees secondary school
+
+certification NOT position, 
+
+Remove the Complete your application, 
+
+Remove apply button change to next
+
+Also print out the profile once user is done submitting, 
+
+Once accepted, from the mail, login to print out your data
